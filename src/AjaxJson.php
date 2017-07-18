@@ -15,13 +15,13 @@ class AjaxJson
     * @desc:
     * @param int $status 状态 0：错误，1:正常
     */
-    public static return_info($status = 1 , $data = array() , $msg = '')
+    public static function return_info($status = 0 , $data = array() , $msg = '')
     {
-        $header('Content-type:application/json');
-        return json_encode(array(
+        header('Content-type:application/json');
+        exit(json_encode(array(
           'status' => $status,
           'data'   => $data,
           'msg'    => $msg
-        ));
+        )));
     }
 }
