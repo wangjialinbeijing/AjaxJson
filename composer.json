@@ -1,6 +1,7 @@
 {
     "name": "wangjialin/ajax-json",
     "description": "Format the return instance.",
+    "version":"v1.0.1",
     "type": "library",
     "require": {
         "php": ">=5.3.0"
